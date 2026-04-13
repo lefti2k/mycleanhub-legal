@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suppression de compte — MyCleanHub</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #F8F8F6;
+      color: #2C2C2A;
+      line-height: 1.7;
+    }
+    header {
+      background: #1D9E75;
+      color: white;
+      padding: 40px 24px;
+      text-align: center;
+    }
+    header h1 { font-size: 28px; margin-bottom: 8px; }
+    header p  { font-size: 15px; opacity: 0.85; }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 20px;
+      border: 1px solid #E8E8E4;
+    }
+    h2 {
+      font-size: 18px;
+      color: #1D9E75;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #E1F5EE;
+    }
+    p { margin-bottom: 12px; font-size: 15px; color: #5F5E5A; }
+    ul { margin: 8px 0 12px 20px; }
+    li { margin-bottom: 8px; font-size: 15px; color: #5F5E5A; }
+    .steps {
+      counter-reset: steps;
+      list-style: none;
+      margin: 0 0 12px 0;
+      padding: 0;
+    }
+    .steps li {
+      counter-increment: steps;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px solid #F1EFE8;
+    }
+    .steps li:last-child { border-bottom: none; }
+    .steps li::before {
+      content: counter(steps);
+      background: #1D9E75;
+      color: white;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .info-box {
+      background: #E1F5EE;
+      border-left: 4px solid #1D9E75;
+      padding: 14px 16px;
+      border-radius: 0 10px 10px 0;
+      margin: 16px 0;
+    }
+    .info-box p { margin: 0; color: #0F6E56; font-size: 14px; font-weight: 500; }
+    .warning-box {
+      background: #FFF8E7;
+      border-left: 4px solid #EF9F27;
+      padding: 14px 16px;
+      border-radius: 0 10px 10px 0;
+      margin: 16px 0;
+    }
+    .warning-box p { margin: 0; color: #854F0B; font-size: 14px; }
+    .deleted { color: #E24B4A; }
+    .kept { color: #854F0B; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    th {
+      background: #E1F5EE;
+      color: #0F6E56;
+      padding: 10px 12px;
+      text-align: left;
+      font-weight: 600;
+    }
+    td { padding: 10px 12px; border-bottom: 1px solid #F1EFE8; color: #5F5E5A; }
+    tr:last-child td { border-bottom: none; }
+    a { color: #1D9E75; text-decoration: none; font-weight: 500; }
+    a:hover { text-decoration: underline; }
+    .email-btn {
+      display: inline-block;
+      background: #1D9E75;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      margin-top: 8px;
+      text-decoration: none;
+    }
+    .email-btn:hover { background: #0F6E56; text-decoration: none; }
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      color: #888780;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🗑️ Suppression de compte</h1>
+  <p>MyCleanHub — La marketplace du nettoyage professionnel</p>
+</header>
+
+<div class="container">
+
+  <!-- Intro -->
+  <div class="card">
+    <h2>Votre droit à l'effacement</h2>
+    <p>Conformément au <strong>Règlement Général sur la Protection des Données (RGPD)</strong> et à l'article 17, vous avez le droit de demander la suppression définitive de votre compte et de toutes les données personnelles associées.</p>
+    <p>MyCleanHub vous permet de supprimer votre compte <strong>directement depuis l'application</strong> en quelques secondes, sans avoir à contacter le support.</p>
+  </div>
+
+  <!-- Comment supprimer -->
+  <div class="card">
+    <h2>Comment supprimer votre compte</h2>
+    <p>Suivez ces étapes depuis l'application MyCleanHub :</p>
+    <ol class="steps">
+      <li>Ouvrez l'application MyCleanHub</li>
+      <li>Appuyez sur l'onglet <strong>Profil</strong> en bas de l'écran</li>
+      <li>Faites défiler jusqu'en bas de la page</li>
+      <li>Appuyez sur <strong>"Supprimer mon compte"</strong></li>
+      <li>Confirmez votre choix en appuyant sur <strong>"Oui, supprimer"</strong></li>
+    </ol>
+    <div class="info-box">
+      <p>✅ La suppression est immédiate et irréversible. Votre compte sera désactivé instantanément.</p>
+    </div>
+  </div>
+
+  <!-- Données supprimées -->
+  <div class="card">
+    <h2>Données supprimées et conservées</h2>
+    <table>
+      <tr>
+        <th>Type de données</th>
+        <th>Action</th>
+        <th>Délai</th>
+      </tr>
+      <tr>
+        <td>Informations du compte (nom, email, téléphone)</td>
+        <td class="deleted">🗑️ Supprimé</td>
+        <td>Immédiat</td>
+      </tr>
+      <tr>
+        <td>Photo de profil</td>
+        <td class="deleted">🗑️ Supprimé</td>
+        <td>Immédiat</td>
+      </tr>
+      <tr>
+        <td>Messages et conversations</td>
+        <td class="deleted">🗑️ Supprimé</td>
+        <td>Immédiat</td>
+      </tr>
+      <tr>
+        <td>Photos envoyées</td>
+        <td class="deleted">🗑️ Supprimé</td>
+        <td>Immédiat</td>
+      </tr>
+      <tr>
+        <td>Devis reçus</td>
+        <td class="deleted">🗑️ Supprimé</td>
+        <td>Immédiat</td>
+      </tr>
+      <tr>
+        <td>Avis laissés</td>
+        <td class="deleted">🗑️ Anonymisé</td>
+        <td>Immédiat</td>
+      </tr>
+      <tr>
+        <td>Historique de réservation</td>
+        <td class="kept">📋 Conservé</td>
+        <td>5 ans (obligation légale)</td>
+      </tr>
+      <tr>
+        <td>Données de facturation</td>
+        <td class="kept">📋 Conservé</td>
+        <td>10 ans (obligation comptable)</td>
+      </tr>
+    </table>
+    <div class="warning-box">
+      <p>⚠️ Certaines données sont conservées pour respecter nos obligations légales et comptables françaises. Elles ne sont jamais utilisées à des fins commerciales.</p>
+    </div>
+  </div>
+
+  <!-- Délai -->
+  <div class="card">
+    <h2>Délai de traitement</h2>
+    <p>La suppression de votre compte est <strong>effective immédiatement</strong> depuis l'application. Vous serez déconnecté automatiquement et ne pourrez plus accéder à votre compte.</p>
+    <p>La suppression complète de toutes vos données sur nos serveurs est effectuée dans un délai maximum de <strong>30 jours</strong> conformément au RGPD.</p>
+  </div>
+
+  <!-- Demande par email -->
+  <div class="card">
+    <h2>Vous ne pouvez pas accéder à l'application ?</h2>
+    <p>Si vous n'avez plus accès à votre compte ou si vous rencontrez des difficultés, vous pouvez envoyer une demande de suppression par email :</p>
+    <ul>
+      <li>Objet : <strong>"Suppression de compte MyCleanHub"</strong></li>
+      <li>Indiquez l'adresse email associée à votre compte</li>
+      <li>Nous traiterons votre demande dans un délai de <strong>30 jours</strong></li>
+    </ul>
+    <a href="mailto:bilalhamzaa78@gmail.com?subject=Suppression de compte MyCleanHub" class="email-btn">
+      ✉️ Envoyer une demande par email
+    </a>
+  </div>
+
+  <!-- Contact -->
+  <div class="card">
+    <h2>Contact & support</h2>
+    <p>Pour toute question relative à la suppression de votre compte ou à vos données personnelles :</p>
+    <p>📧 <a href="mailto:bilalhamzaa78@gmail.com">bilalhamzaa78@gmail.com</a></p>
+    <p>En cas de réclamation non résolue, vous pouvez contacter la <a href="https://www.cnil.fr" target="_blank">CNIL</a>.</p>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 MyCleanHub · Bilal Hamza · SIREN 942 156 357 · Villepreux (78)</p>
+  <p style="margin-top: 8px;">
+    <a href="mailto:bilalhamzaa78@gmail.com">bilalhamzaa78@gmail.com</a>
+    · <a href="privacy-policy.html">Politique de confidentialité</a>
+  </p>
+</footer>
+
+</body>
+</html>
